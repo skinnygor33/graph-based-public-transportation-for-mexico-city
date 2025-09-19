@@ -1,0 +1,42 @@
+station_id,name,system,lines
+cuatro_caminos_metro,Cuatro Caminos,Metro,Metro Line 2
+panteones_metro,Panteones,Metro,Metro Line 2
+tacuba_hub,Tacuba,Metro,Metro Line 2;Metro Line 7
+cuitlahuac_metro,Cuitláhuac,Metro,Metro Line 2
+popotla_metro,Popotla,Metro,Metro Line 2
+colegio_militar_metro,Colegio Militar,Metro,Metro Line 2
+normal_metro,Normal,Metro,Metro Line 2
+san_cosme_metro,San Cosme,Metro,Metro Line 2
+revolucion_metro,Revolución,Metro,Metro Line 2
+hidalgo_hub,Hidalgo,Metro;MetroBús,Metro Line 2;Metro Line 3;MetroBús Line 7
+bellas_artes_hub,Bellas Artes,Metro,Metro Line 2;Metro Line 8
+allende_metro,Allende,Metro,Metro Line 2
+zocalo_metro,Zócalo/Tenochtitlan,Metro,Metro Line 2
+pino_suarez_hub,Pino Suárez,Metro,Metro Line 1;Metro Line 2
+san_antonio_abad_metro,San Antonio Abad,Metro,Metro Line 2
+chabacano_hub,Chabacano,Metro,Metro Line 2;Metro Line 8;Metro Line 9
+viaducto_metro,Viaducto,Metro,Metro Line 2
+xola_metro,Xola,Metro,Metro Line 2
+villa_de_cortes_metro,Villa de Cortés,Metro,Metro Line 2
+nativitas_metro,Nativitas,Metro,Metro Line 2
+portales_metro,Portales,Metro,Metro Line 2
+ermita_hub,Ermita,Metro,Metro Line 2;Metro Line 12
+general_anaya_metro,General Anaya,Metro,Metro Line 2
+tasquena_metro,Tasqueña,Metro,Metro Line 2
+indios_verdes_hub,Indios Verdes,Metro;MetroBús,Metro Line 3;MetroBús Line 1
+deportivo_18_mb,Deportivo 18 de Marzo,MetroBús,MetroBús Line 1
+la_villa_mb,La Villa,MetroBús,MetroBús Line 1
+manuel_gonzalez_mb,Manuel González,MetroBús,MetroBús Line 1
+buenavista_hub,Buenavista,Metro;MetroBús,Metro Line B;MetroBús Line 1;MetroBús Line 3
+reforma_mb,Reforma,MetroBús,MetroBús Line 1
+hamburgo_mb,Hamburgo,MetroBús,MetroBús Line 1
+insurgentes_hub,Insurgentes,Metro;MetroBús,Metro Line 1;MetroBús Line 1
+durango_mb,Durango,MetroBús,MetroBús Line 1
+alvaro_obregon_mb,Álvaro Obregón,MetroBús,MetroBús Line 1
+sonora_mb,Sonora,MetroBús,MetroBús Line 1
+nuevo_leon_mb,Nuevo León,MetroBús,MetroBús Line 1
+chilpancingo_hub,Chilpancingo,Metro;MetroBús,Metro Line 9;MetroBús Line 1
+campeche_mb,Campeche,MetroBús,MetroBús Line 1
+poliforum_mb,Poliforum,MetroBús,MetroBús Line 1
+napoles_mb,Nápoles,MetroBús,MetroBús Line 1
+wtc_mb,World Trade Center,MetroBús,MetroBús Line 1

@@ -1,42 +1,148 @@
 station_id,name,system,lines
-cuatro_caminos_metro,Cuatro Caminos,Metro,Metro Line 2
-panteones_metro,Panteones,Metro,Metro Line 2
-tacuba_hub,Tacuba,Metro,Metro Line 2;Metro Line 7
-cuitlahuac_metro,Cuitláhuac,Metro,Metro Line 2
-popotla_metro,Popotla,Metro,Metro Line 2
-colegio_militar_metro,Colegio Militar,Metro,Metro Line 2
-normal_metro,Normal,Metro,Metro Line 2
-san_cosme_metro,San Cosme,Metro,Metro Line 2
-revolucion_metro,Revolución,Metro,Metro Line 2
-hidalgo_hub,Hidalgo,Metro;MetroBús,Metro Line 2;Metro Line 3;MetroBús Line 7
-bellas_artes_hub,Bellas Artes,Metro,Metro Line 2;Metro Line 8
-allende_metro,Allende,Metro,Metro Line 2
-zocalo_metro,Zócalo/Tenochtitlan,Metro,Metro Line 2
-pino_suarez_hub,Pino Suárez,Metro,Metro Line 1;Metro Line 2
-san_antonio_abad_metro,San Antonio Abad,Metro,Metro Line 2
-chabacano_hub,Chabacano,Metro,Metro Line 2;Metro Line 8;Metro Line 9
-viaducto_metro,Viaducto,Metro,Metro Line 2
-xola_metro,Xola,Metro,Metro Line 2
-villa_de_cortes_metro,Villa de Cortés,Metro,Metro Line 2
-nativitas_metro,Nativitas,Metro,Metro Line 2
-portales_metro,Portales,Metro,Metro Line 2
-ermita_hub,Ermita,Metro,Metro Line 2;Metro Line 12
-general_anaya_metro,General Anaya,Metro,Metro Line 2
-tasquena_metro,Tasqueña,Metro,Metro Line 2
-indios_verdes_hub,Indios Verdes,Metro;MetroBús,Metro Line 3;MetroBús Line 1
-deportivo_18_mb,Deportivo 18 de Marzo,MetroBús,MetroBús Line 1
-la_villa_mb,La Villa,MetroBús,MetroBús Line 1
-manuel_gonzalez_mb,Manuel González,MetroBús,MetroBús Line 1
-buenavista_hub,Buenavista,Metro;MetroBús,Metro Line B;MetroBús Line 1;MetroBús Line 3
-reforma_mb,Reforma,MetroBús,MetroBús Line 1
-hamburgo_mb,Hamburgo,MetroBús,MetroBús Line 1
-insurgentes_hub,Insurgentes,Metro;MetroBús,Metro Line 1;MetroBús Line 1
-durango_mb,Durango,MetroBús,MetroBús Line 1
-alvaro_obregon_mb,Álvaro Obregón,MetroBús,MetroBús Line 1
-sonora_mb,Sonora,MetroBús,MetroBús Line 1
-nuevo_leon_mb,Nuevo León,MetroBús,MetroBús Line 1
-chilpancingo_hub,Chilpancingo,Metro;MetroBús,Metro Line 9;MetroBús Line 1
-campeche_mb,Campeche,MetroBús,MetroBús Line 1
-poliforum_mb,Poliforum,MetroBús,MetroBús Line 1
-napoles_mb,Nápoles,MetroBús,MetroBús Line 1
-wtc_mb,World Trade Center,MetroBús,MetroBús Line 1
+observatorio,Observatorio,Metro,1
+tacubaya,Tacubaya,Metro,1;9;7
+juanacatlan,Juanacatlán,Metro,1
+chapultepec,Chapultepec,Metro,1
+sevilla,Sevilla,Metro,1
+insurgentes,Insurgentes,Metro,1
+cuauhtemoc,Cuauhtémoc,Metro,1
+balderas,Balderas,Metro,1;3
+salto_del_agua,Salto del Agua,Metro,1;8
+isabel_la_catolica,Isabel la Católica,Metro,1
+pino_suarez,Pino Suárez,Metro,1;2
+merced,Merced,Metro,1
+candelaria,Candelaria,Metro,1;4
+san_lazaro,San Lázaro,Metro,1;B
+moctezuma,Moctezuma,Metro,1
+balbuena,Balbuena,Metro,1
+boulevard_puerto_aereo,Boulevard Puerto Aéreo,Metro,1
+gomez_farias,Gómez Farías,Metro,1
+zaragoza,Zaragoza,Metro,1
+pantitlan,Pantitlán,Metro,1;5;9;A
+cuatro_caminos,Cuatro Caminos,Metro,2
+panteones,Panteones,Metro,2
+tacuba,Tacuba,Metro,2;7
+cuitlahuac,Cuitláhuac,Metro,2
+popotla,Popotla,Metro,2
+colegio_militar,Colegio Militar,Metro,2
+normal,Normal,Metro,2
+san_cosme,San Cosme,Metro,2
+revolucion,Revolución,Metro,2
+hidalgo,Hidalgo,Metro,2;3
+bellas_artes,Bellas Artes,Metro,2;8
+allende,Allende,Metro,2
+zocalo,Zócalo,Metro,2
+san_antonio_abad,San Antonio Abad,Metro,2
+chabacano,Chabacano,Metro,2;8;9
+viaducto,Viaducto,Metro,2
+xola,Xola,Metro,2
+villa_de_cortes,Villa de Cortés,Metro,2
+nativitas,Nativitas,Metro,2
+portales,Portales,Metro,2
+ermita,Ermita,Metro,2
+general_anaya,General Anaya,Metro,2
+tasquena,Tasqueña,Metro,2
+indios_verdes,Indios Verdes,Metro,3
+deportivo_18_de_marzo,Deportivo 18 de Marzo,Metro,3;6
+potrero,Potrero,Metro,3
+la_raza,La Raza,Metro,3;5
+tlatelolco,Tlatelolco,Metro,3
+guerrero,Guerrero,Metro,3;B
+juarez,Juárez,Metro,3
+ninos_heroes,Niños Héroes,Metro,3
+hospital_general,Hospital General,Metro,3
+centro_medico,Centro Médico,Metro,3;9
+etiopia/plaza_de_la_transparencia,Etiopía/Plaza de la Transparencia,Metro,3
+eugenia,Eugenia,Metro,3
+division_del_norte,División del Norte,Metro,3
+zapata,Zapata,Metro,3
+coyoacan,Coyoacán,Metro,3
+viveros/derechos_humanos,Viveros/Derechos Humanos,Metro,3
+miguel_angel_de_quevedo,Miguel Ángel de Quevedo,Metro,3
+copilco,Copilco,Metro,3
+universidad,Universidad,Metro,3
+martin_carrera,Martín Carrera,Metro,4;6
+talisman,Talismán,Metro,4
+bondojito,Bondojito,Metro,4
+consulado,Consulado,Metro,4;5
+canal_del_norte,Canal del Norte,Metro,4
+morelos,Morelos,Metro,4;B
+fray_servando,Fray Servando,Metro,4
+jamaica,Jamaica,Metro,4;9
+santa_anita,Santa Anita,Metro,4;8
+politecnico,Politécnico,Metro,5
+instituto_del_petroleo,Instituto del Petróleo,Metro,5;6
+autobuses_del_norte,Autobuses del Norte,Metro,5
+misterios,Misterios,Metro,5
+valle_gomez,Valle Gómez,Metro,5
+eduardo_molina,Eduardo Molina,Metro,5
+aragon,Aragón,Metro,5
+oceania,Oceanía,Metro,5;B
+terminal_aerea,Terminal Aérea,Metro,5
+hangares,Hangares,Metro,5
+garibaldi/lagunilla,Garibaldi/Lagunilla,Metro,8;B
+san_juan_de_letran,San Juan de Letrán,Metro,8
+doctores,Doctores,Metro,8
+obrera,Obrera,Metro,8
+la_viga,La Viga,Metro,8
+coyuya,Coyuya,Metro,8
+iztacalco,Iztacalco,Metro,8
+apatlaco,Apatlaco,Metro,8
+aculco,Aculco,Metro,8
+escuadron_201,Escuadrón 201,Metro,8
+atlalilco,Atlalilco,Metro,8
+iztapalapa,Iztapalapa,Metro,8
+cerro_de_la_estrella,Cerro de la Estrella,Metro,8
+uam-1,UAM‑1,Metro,8
+constitucion_de_1917,Constitución de 1917,Metro,8
+patriotismo,Patriotismo,Metro,9
+chilpancingo,Chilpancingo,Metro,9
+lazaro_cardenas,Lázaro Cárdenas,Metro,9
+mixiuhca,Mixiuhca,Metro,9
+velodromo,Velódromo,Metro,9
+ciudad_deportiva,Ciudad Deportiva,Metro,9
+puebla,Puebla,Metro,9
+agricola_oriental,Agrícola Oriental,Metro,A
+canal_de_san_juan,Canal de San Juan,Metro,A
+tepalcates,Tepalcates,Metro,A
+guelatao,Guelatao,Metro,A
+penon_viejo,Peñón Viejo,Metro,A
+acatitla,Acatitla,Metro,A
+santa_marta,Santa Marta,Metro,A
+los_reyes,Los Reyes,Metro,A
+la_paz,La Paz,Metro,A
+ciudad_azteca,Ciudad Azteca,Metro,B
+plaza_aragon,Plaza Aragón,Metro,B
+olimpica,Olímpica,Metro,B
+ecatepec,Ecatepec,Metro,B
+muzquiz,Múzquiz,Metro,B
+rio_de_los_remedios,Río de los Remedios,Metro,B
+impulsora,Impulsora,Metro,B
+nezahualcoyotl,Nezahualcóyotl,Metro,B
+villa_de_aragon,Villa de Aragón,Metro,B
+bosque_de_aragon,Bosque de Aragón,Metro,B
+deportivo_oceania,Deportivo Oceanía,Metro,B
+romero_rubio,Romero Rubio,Metro,B
+ricardo_flores_magon,Ricardo Flores Magón,Metro,B
+tepito,Tepito,Metro,B
+lagunilla,Lagunilla,Metro,B
+buenavista,Buenavista,Metro,B
+el_rosario,El Rosario,Metro,6;7
+tezozomoc,Tezozómoc,Metro,6
+uam-azcapotzalco,UAM-Azcapotzalco,Metro,6
+ferreria/arena_ciudad_de_mexico,Ferrería/Arena Ciudad de México,Metro,6
+norte_45,Norte 45,Metro,6
+vallejo,Vallejo,Metro,6
+lindavista,Lindavista,Metro,6
+la_villa-basilica,La Villa-Basílica,Metro,6
+aquiles_serdan,Aquiles Serdán,Metro,7
+camarones,Camarones,Metro,7
+refineria,Refinería,Metro,7
+san_joaquin,San Joaquín,Metro,7
+polanco,Polanco,Metro,7
+auditorio,Auditorio,Metro,7
+constituyentes,Constituyentes,Metro,7
+san_pedro_de_los_pinos,San Pedro de los Pinos,Metro,7
+san_antonio,San Antonio,Metro,7
+mixcoac,Mixcoac,Metro,7
+barranca_del_muerto,Barranca del Muerto,Metro,7

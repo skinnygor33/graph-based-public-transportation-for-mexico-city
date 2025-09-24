@@ -96,7 +96,7 @@ class MetroGraph:
         for line in sorted(metro_lines.keys()):
             stations = metro_lines[line]
             print(f"\nLINE {line} ({len(stations)} stations)")
-            print("─" * 50)
+            print("-" * 50)
             
             transfer_stations = []
             regular_stations = []
@@ -114,13 +114,13 @@ class MetroGraph:
                     other_lines = [l for l in station.lines if l != line]
                     lines_str = ", ".join(f"Line {l}" for l in other_lines)
                     print(f"   {station.name}")
-                    print(f"     └─ Connected with: {lines_str}")
+                    print(f"     - Connected with: {lines_str}")
             
             # Print regular stations
             if regular_stations:
                 print(f"\n REGULAR STATIONS ({len(regular_stations)}):")
                 for i, station in enumerate(regular_stations):
-                    print(f"  {i+1:2d}. {station.name}")
+                    print(f"{i+1:2d}.{station.name}")
         
         # Summary of all transfers
         print(f"\n" + "="*70)
@@ -138,7 +138,7 @@ class MetroGraph:
         for station in all_transfer_stations:
             lines_str = ", ".join(f"LLine {l}" for l in station.lines)
             print(f" {station.name} ({len(station.lines)} lines)")
-            print(f"     └─ {lines_str}")
+            print(f"     - {lines_str}")
         
     def validate_metro_network(self):
         """Validates the metro network structure and provides detailed analysis."""
@@ -221,7 +221,7 @@ class MetroGraph:
         if unidirectional_edges:
             print(f"\n UNIDIRECTIONAL CONNECTIONS:")
             for from_station, to_station, weight in unidirectional_edges[:10]:  # Show first 10
-                print(f"  - {from_station} → {to_station} (weight: {weight})")
+                print(f"  - {from_station} - {to_station} (weight: {weight})")
         
         print(f"\n METRO NETWORK VALIDATION COMPLETE")
         return {
@@ -277,7 +277,7 @@ class MetroGraph:
         while current is not None:
             node = self.find_target_node(current)
             path.append(node)
-            current = previous.get(current)
+            current = previous[current]
 
         # Reverse to get path from start to end
         path.reverse()
@@ -288,13 +288,9 @@ class MetroGraph:
         
         print(f"\nShortest path from '{start_name}' to '{end_name}':")
         print(f"Total wait time: {total_distance} minutes.")
-        print(f"Path: {' → '.join(path_names)}")
+        print(f"Path: {' -> '.join(path_names)}")
         print(f"Number of stations: {len(path)}")
-    
 
-
-
-        
 
 
 # --- Main execution block ---
@@ -319,5 +315,5 @@ if __name__ == "__main__":
     #cdmx_metro.print_graph()
 
     # 6. Search algorithm to find optimum path between stations.
-    djikstra_result = cdmx_metro.dijkstra("Lindavista", "Zaragoza")
+    djikstra_result = cdmx_metro.dijkstra("El Rosario", "Eugenia")
     print(djikstra_result)

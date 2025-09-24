@@ -55,7 +55,7 @@ centro_medico,Centro Médico,Metro,3;9
 etiopia/plaza_de_la_transparencia,Etiopía/Plaza de la Transparencia,Metro,3
 eugenia,Eugenia,Metro,3
 division_del_norte,División del Norte,Metro,3
-zapata,Zapata,Metro,3
+zapata,Zapata,Metro,3;12
 coyoacan,Coyoacán,Metro,3
 viveros/derechos_humanos,Viveros/Derechos Humanos,Metro,3
 miguel_angel_de_quevedo,Miguel Ángel de Quevedo,Metro,3
@@ -144,5 +144,22 @@ auditorio,Auditorio,Metro,7
 constituyentes,Constituyentes,Metro,7
 san_pedro_de_los_pinos,San Pedro de los Pinos,Metro,7
 san_antonio,San Antonio,Metro,7
-mixcoac,Mixcoac,Metro,7
+mixcoac,Mixcoac,Metro,7;12
 barranca_del_muerto,Barranca del Muerto,Metro,7
+hospital_20_de_noviembre,Hospital 20 de Noviembre,Metro,12
+insurgentes_sur,Insurgentes Sur,Metro,12
+parque_de_los_venados,Parque de los Venados,Metro,12
+eje_central,Eje Central,Metro,12
+ermita_iztapalapa,Ermita Iztapalapa,Metro,12;2
+mexicaltzingo,Mexicaltzingo,Metro,12
+culhuacan,Culhuacán,Metro,12
+san_andres_tomatlan,San Andrés Tomatlán,Metro,12
+lomas_estrella,Lomas Estrella,Metro,12
+calle_11,Calle 11,Metro,12
+periferico_oriente,Periférico Oriente,Metro,12
+tezonco,Tezonco,Metro,12
+olivos,Olivos,Metro,12
+nopalera,Nopalera,Metro,12
+zapotitlan,Zapotitlán,Metro,12
+tlaltenco,Tlaltenco,Metro,12
+tlahuac,Tlahuac,Metro,12

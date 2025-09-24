@@ -1,5 +1,9 @@
 import csv
+import heapq
+import sys
 from stationNode import StationNode
+
+
 
 class MetroGraph:
     """Represents the Mexico City Metro network."""
@@ -227,6 +231,70 @@ class MetroGraph:
             'hub_stations': len(hub_stations),
             'metro_lines': len(metro_lines)
         }
+    
+    def find_target_node(self, name):
+        for node in self.nodes.values():
+            if node.name.lower() == name.lower():
+                return node
+        return None
+
+    def dijkstra(self, start_name, end_name):
+        initial_node = self.find_target_node(start_name)
+        if not initial_node:
+            print(f"Station '{start_name}' not found.")
+            return
+        final_node = self.find_target_node(end_name)
+        if not final_node:
+            print(f"Station '{end_name}' not found.")
+            return
+        dist = {node.name: sys.maxsize for node in self.nodes.values()}
+        previous = {node.name: None for node in self.nodes.values()}
+        not_visited = set(self.nodes.values())
+        dist[initial_node.name] = 0
+
+        while not_visited:
+            current_node = min(not_visited, key=lambda node: dist[node.name])
+            not_visited.remove(current_node)
+
+            if current_node == final_node:
+                break
+
+            for neighbor, weight in current_node.neighbors.items():
+                alt = dist[current_node.name] + weight
+                if alt < dist[neighbor.name]:
+                    dist[neighbor.name] = alt
+                    previous[neighbor.name] = current_node.name
+        
+        path = []
+        current = final_node.name
+    
+        # If there's no path to the destination
+        if dist[final_node.name] == sys.maxsize:
+            print(f"No path found from '{start_name}' to '{end_name}'")
+            return None
+    
+        # Build path by following previous nodes backwards
+        while current is not None:
+            node = self.find_target_node(current)
+            path.append(node)
+            current = previous.get(current)
+
+        # Reverse to get path from start to end
+        path.reverse()
+        
+        # Return results
+        total_distance = dist[final_node.name]
+        path_names = [node.name for node in path]
+        
+        print(f"\nShortest path from '{start_name}' to '{end_name}':")
+        print(f"Total wait time: {total_distance} minutes.")
+        print(f"Path: {' → '.join(path_names)}")
+        print(f"Number of stations: {len(path)}")
+    
+
+
+
+        
 
 
 # --- Main execution block ---
@@ -234,8 +302,8 @@ if __name__ == "__main__":
     # 1. Create and load the Metro graph
     cdmx_metro = MetroGraph()
     #Remember to change the path to your own path
-    cdmx_metro.load_nodes_from_csv('/Users/emiliamacarenarodriguezlavarriosarriaga/Desktop/Lab2/graph-based-public-transportation-for-mexico-city/csv_files/nodes.csv')
-    cdmx_metro.load_edges_from_csv('/Users/emiliamacarenarodriguezlavarriosarriaga/Desktop/Lab2/graph-based-public-transportation-for-mexico-city/csv_files/edges.csv')
+    cdmx_metro.load_nodes_from_csv('csv_files/nodes.csv')
+    cdmx_metro.load_edges_from_csv('csv_files/edges.csv')
     print("\nMexico City Metro network successfully created.")
 
     # 2. Print metro lines and their transfers (transbordos)
@@ -248,4 +316,8 @@ if __name__ == "__main__":
     total_weight = cdmx_metro.calculate_total_weight()
 
     # 5. Uncomment to print the entire graph structure (verbose)
-    # cdmx_metro.print_graph()
+    #cdmx_metro.print_graph()
+
+    # 6. Search algorithm to find optimum path between stations.
+    djikstra_result = cdmx_metro.dijkstra("Lindavista", "Zaragoza")
+    print(djikstra_result)
